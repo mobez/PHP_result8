@@ -7,17 +7,17 @@
 <html>
 <head>
     <title>Задание 8</title>
-    <link rel="stylesheet" type="text/css" href="HTML/style.css">
+    <link rel="stylesheet" type="text/css" href="./HTML/style.css">
 </head>
 <body>
 <div>
 <?php
-    include ("HTML/about.php");
+    include ("./HTML/about.php");
     if (strlen($_SESSION['name'])){
       echo '<p>Здравствуйте ' . $_SESSION['name'] . '!</p>';
-      include ("HTML/formexit.php");
+      include ("./HTML/formexit.php");
     }else{
-      include ("HTML/formregistr.php");
+      include ("./HTML/formregistr.php");
     }
 ?>
 </div>
